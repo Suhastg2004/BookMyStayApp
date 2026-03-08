@@ -30,4 +30,10 @@ public class InventoryService {
                     + " Price: " + roomPrice.get(type));
         }
     }
+    
+    // Add this method to expose room types for read-only listing
+    public java.util.Set<String> getRoomTypes() {
+        return roomCount.keySet();
+    }
+    
 }
